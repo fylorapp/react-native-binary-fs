@@ -37,6 +37,7 @@ project.xcworkspace
 .idea
 .project
 .settings
+*.hprof
 local.properties
 android.iml
 

@@ -2,10 +2,13 @@
 
 #ifdef __cplusplus
 
-#import "example.h"
+#import "lz4.h"
+#import "TypedArrayApi.h"
 
 #endif
 
 @interface BinaryFs : NSObject <RCTBridgeModule>
+
+@property(nonatomic, assign) BOOL setBridgeOnMainQueue;
 
 @end
