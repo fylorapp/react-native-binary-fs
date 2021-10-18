@@ -22,7 +22,6 @@
     "!**/__mocks__"
   ],
   "scripts": {
-    "postinstall": "yarn install",
     "test": "jest",
     "typescript": "tsc --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
