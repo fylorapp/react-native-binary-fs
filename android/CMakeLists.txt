@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.9.0)
 
-add_library(cpp
+add_library(binaryfs
             SHARED
             ../cpp/TypedArrayApi.cpp
             ../cpp/lz4.c
@@ -23,6 +23,6 @@ set_target_properties(
 )
 
 target_link_libraries(
-        cpp
+        binaryfs
         android
 )

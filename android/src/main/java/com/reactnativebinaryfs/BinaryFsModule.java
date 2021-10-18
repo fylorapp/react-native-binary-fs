@@ -84,7 +84,7 @@ public class BinaryFsModule extends ReactContextBaseJavaModule {
   static {
     try {
       // Used to load the 'native-lib' library on application startup.
-      System.loadLibrary("cpp");
+      System.loadLibrary("binaryfs");
     } catch (Exception ignored) {
     }
   }
