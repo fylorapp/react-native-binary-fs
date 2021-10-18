@@ -5,13 +5,13 @@ add_library(binaryfs
             ../cpp/TypedArrayApi.cpp
             ../cpp/lz4.c
             ./cpp-adapter.cpp
-            ../node_modules/react-native/ReactCommon/jsi/jsi/jsi.cpp
+            $ENV{ROOT_DIR}/node_modules/react-native/ReactCommon/jsi/jsi/jsi.cpp
 )
 
 include_directories(
-            ../node_modules/react-native/React
-            ../node_modules/react-native/React/Base
-            ../node_modules/react-native/ReactCommon/jsi
+            $ENV{ROOT_DIR}/node_modules/react-native/React
+            $ENV{ROOT_DIR}/node_modules/react-native/React/Base
+            $ENV{ROOT_DIR}/node_modules/react-native/ReactCommon/jsi
             ../cpp
 )
 
