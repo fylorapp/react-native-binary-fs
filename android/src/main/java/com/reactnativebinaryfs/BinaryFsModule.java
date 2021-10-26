@@ -44,7 +44,8 @@ public class BinaryFsModule extends ReactContextBaseJavaModule {
       Uri uri = Uri.parse(fileUrl);
       InputStream is = resolver.openInputStream(uri);
       byte[] bytes = new byte[chunkSize];
-      is.read(bytes, offset, chunkSize);
+      is.skip(offset);
+      is.read(bytes, 0, chunkSize);
       return bytes;
     } catch (Exception e) {
       return null;
